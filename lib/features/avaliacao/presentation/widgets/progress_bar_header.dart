@@ -28,7 +28,7 @@ class ProgressBarHeader extends StatelessWidget {
                     fontSize: 11,
                     letterSpacing: 2.0,
                     fontWeight: FontWeight.w600,
-                    color: AppColors.rose600,
+                    color: AppColors.slate600,
                   ),
                 ),
                 Text(
@@ -37,7 +37,7 @@ class ProgressBarHeader extends StatelessWidget {
                     fontSize: 11,
                     letterSpacing: 1.5,
                     fontWeight: FontWeight.w600,
-                    color: AppColors.rose600,
+                    color: AppColors.slate600,
                   ),
                 ),
               ],
@@ -48,8 +48,8 @@ class ProgressBarHeader extends StatelessWidget {
               child: LinearProgressIndicator(
                 value: progressValue,
                 minHeight: 4,
-                backgroundColor: AppColors.rose200.withValues(alpha: 0.7),
-                valueColor: const AlwaysStoppedAnimation<Color>(AppColors.rose500),
+                backgroundColor: AppColors.slate200.withValues(alpha: 0.7),
+                valueColor: const AlwaysStoppedAnimation<Color>(AppColors.slate500),
               ),
             ),
           ],

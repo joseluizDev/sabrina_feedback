@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"sabrina-feedback","configurations":{"web":"1:1085278211020:web:486e56bf25bb30d7b26b69"}}}}},"hosting":{"public":"build/web","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]}}

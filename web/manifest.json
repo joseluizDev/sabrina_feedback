@@ -1,11 +1,11 @@
 {
-    "name": "sabrina_feedback",
-    "short_name": "sabrina_feedback",
+    "name": "Avaliação",
+    "short_name": "Avaliação",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#F8FAFC",
+    "theme_color": "#627C91",
+    "description": "Ficaríamos muito felizes se você pudesse avaliar nossos serviços! Sua opinião é muito importante para nós e nos ajuda a melhorar cada vez mais.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

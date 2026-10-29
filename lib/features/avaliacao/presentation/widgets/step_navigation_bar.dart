@@ -22,7 +22,7 @@ class StepNavigationBar extends StatelessWidget {
       padding: const EdgeInsets.only(top: 14),
       decoration: const BoxDecoration(
         border: Border(
-          top: BorderSide(color: AppColors.rose100, width: 1),
+          top: BorderSide(color: AppColors.slate100, width: 1),
         ),
       ),
       child: Row(
@@ -35,7 +35,7 @@ class StepNavigationBar extends StatelessWidget {
               icon: const Icon(Icons.chevron_left_rounded, size: 20),
               label: const Text('Voltar'),
               style: TextButton.styleFrom(
-                foregroundColor: AppColors.rose600,
+                foregroundColor: AppColors.slate600,
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               ),
             )

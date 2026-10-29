@@ -9,14 +9,14 @@ class SabrinaFeedbackApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Experiência & Bem-Estar | Avaliação',
+      title: 'Avaliação',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: 'sans-serif',
         scaffoldBackgroundColor: AppColors.bgStart,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: AppColors.rose500,
-          primary: AppColors.rose600,
+          seedColor: AppColors.slate500,
+          primary: AppColors.slate600,
         ),
       ),
       home: const AvaliacaoPage(),

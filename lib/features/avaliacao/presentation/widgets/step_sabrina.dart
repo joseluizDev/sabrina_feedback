@@ -40,23 +40,8 @@ class StepSabrina extends StatelessWidget {
                       shape: BoxShape.circle,
                       gradient: AppColors.primaryGradient,
                     ),
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.rose50,
-                      ),
-                      child: const Center(
-                        child: Text(
-                          'S',
-                          style: TextStyle(
-                            fontFamily: 'serif',
-                            fontSize: 26,
-                            fontWeight: FontWeight.w700,
-                            fontStyle: FontStyle.italic,
-                            color: AppColors.rose700,
-                          ),
-                        ),
-                      ),
+                    child: ClipOval(
+                      child: Image.asset('assets/logo_icon.png', fit: BoxFit.cover),
                     ),
                   ),
                   Container(
@@ -65,7 +50,7 @@ class StepSabrina extends StatelessWidget {
                       color: Colors.white,
                       shape: BoxShape.circle,
                     ),
-                    child: const Text('✦', style: TextStyle(fontSize: 10, color: AppColors.rose500)),
+                    child: const Text('✦', style: TextStyle(fontSize: 10, color: AppColors.gold300)),
                   ),
                 ],
               ),
@@ -73,13 +58,13 @@ class StepSabrina extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
                 decoration: BoxDecoration(
-                  color: AppColors.rose50,
-                  border: Border.all(color: AppColors.rose200),
+                  color: AppColors.slate50,
+                  border: Border.all(color: AppColors.slate200),
                   borderRadius: BorderRadius.circular(999),
                 ),
                 child: const Text(
                   'Atendimento Personalizado • Sabrina',
-                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: AppColors.rose600),
+                  style: TextStyle(fontSize: 11, fontWeight: FontWeight.w500, color: AppColors.slate600),
                 ),
               ),
               const SizedBox(height: 10),
@@ -90,14 +75,14 @@ class StepSabrina extends StatelessWidget {
                   fontFamily: 'serif',
                   fontSize: 22,
                   fontWeight: FontWeight.w600,
-                  color: AppColors.rose900,
+                  color: AppColors.slate900,
                 ),
               ),
               const SizedBox(height: 6),
               const Text(
                 'Avalie o cuidado, a atenção aos detalhes e a clareza durante o seu atendimento',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: AppColors.rose700),
+                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: AppColors.slate700),
               ),
               const SizedBox(height: 22),
               RatingScaleWidget(

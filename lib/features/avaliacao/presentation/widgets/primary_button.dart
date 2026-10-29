@@ -21,11 +21,11 @@ class PrimaryButton extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(999),
         gradient: isEnabled ? AppColors.primaryGradient : null,
-        color: isEnabled ? null : AppColors.rose200,
+        color: isEnabled ? null : AppColors.slate200,
         boxShadow: isEnabled
             ? [
                 BoxShadow(
-                  color: AppColors.rose500.withValues(alpha: 0.30),
+                  color: AppColors.slate500.withValues(alpha: 0.30),
                   blurRadius: 14,
                   offset: const Offset(0, 6),
                 ),
@@ -48,7 +48,7 @@ class PrimaryButton extends StatelessWidget {
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
                     letterSpacing: 1.5,
-                    color: isEnabled ? Colors.white : AppColors.rose400,
+                    color: isEnabled ? Colors.white : AppColors.slate600,
                   ),
                 ),
                 if (icon != null) ...[
@@ -56,7 +56,7 @@ class PrimaryButton extends StatelessWidget {
                   Icon(
                     icon,
                     size: 16,
-                    color: isEnabled ? Colors.white : AppColors.rose400,
+                    color: isEnabled ? Colors.white : AppColors.slate600,
                   ),
                 ],
               ],

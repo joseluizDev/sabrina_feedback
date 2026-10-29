@@ -36,15 +36,15 @@ class RatingScaleWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       gradient: isSelected ? AppColors.selectedCircleGradient : null,
-                      color: isSelected ? null : AppColors.rose50.withValues(alpha: 0.8),
+                      color: isSelected ? null : AppColors.slate50.withValues(alpha: 0.8),
                       border: Border.all(
-                        color: isSelected ? AppColors.rose600 : AppColors.rose300,
+                        color: isSelected ? AppColors.slate600 : AppColors.slate300,
                         width: 1.5,
                       ),
                       boxShadow: [
                         BoxShadow(
                           color: isSelected
-                              ? AppColors.rose700.withValues(alpha: 0.35)
+                              ? AppColors.slate700.withValues(alpha: 0.35)
                               : Colors.transparent,
                           blurRadius: isSelected ? 8 : 0,
                           offset: isSelected ? const Offset(0, 3) : Offset.zero,
@@ -58,7 +58,7 @@ class RatingScaleWidget extends StatelessWidget {
                           fontFamily: 'serif',
                           fontSize: 16,
                           fontWeight: FontWeight.w700,
-                          color: isSelected ? Colors.white : AppColors.rose700,
+                          color: isSelected ? Colors.white : AppColors.slate700,
                         ),
                       ),
                     ),
@@ -80,7 +80,7 @@ class RatingScaleWidget extends StatelessWidget {
                   ? Container(
                       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
                       decoration: BoxDecoration(
-                        color: AppColors.rose100,
+                        color: AppColors.gold100,
                         borderRadius: BorderRadius.circular(999),
                       ),
                       child: Text(
@@ -89,7 +89,7 @@ class RatingScaleWidget extends StatelessWidget {
                         style: const TextStyle(
                           fontSize: 11,
                           fontWeight: FontWeight.w600,
-                          color: AppColors.rose700,
+                          color: AppColors.slate700,
                         ),
                       ),
                     )
@@ -101,8 +101,8 @@ class RatingScaleWidget extends StatelessWidget {
         const Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text('Pouco satisfatório', style: TextStyle(fontSize: 11, color: AppColors.rose400)),
-            Text('Impecável', style: TextStyle(fontSize: 11, color: AppColors.rose400)),
+            Text('Pouco satisfatório', style: TextStyle(fontSize: 11, color: AppColors.slate600)),
+            Text('Impecável', style: TextStyle(fontSize: 11, color: AppColors.slate600)),
           ],
         ),
       ],

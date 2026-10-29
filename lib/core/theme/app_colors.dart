@@ -1,35 +1,36 @@
 import 'package:flutter/material.dart';
 
 abstract final class AppColors {
-  static const bgStart = Color(0xFFFDF8F7);
-  static const bgMid = Color(0xFFF9ECEA);
-  static const bgEnd = Color(0xFFF2E2DC);
+  // Paleta extraída da logo: ardósia (azul acinzentado) + dourado champanhe.
+  static const bgStart = Color(0xFFF6F9FC);
+  static const bgMid = Color(0xFFEAF1F7);
+  static const bgEnd = Color(0xFFDCE7F1);
 
-  static const textDark = Color(0xFF4A3533);
+  static const textDark = Color(0xFF24343F);
 
-  static const rose50 = Color(0xFFFDF8F7);
-  static const rose100 = Color(0xFFFAEEEC);
-  static const rose200 = Color(0xFFF3D9D6);
-  static const rose300 = Color(0xFFE7BCB7);
-  static const rose400 = Color(0xFFD6958F);
-  static const rose500 = Color(0xFFC2746D);
-  static const rose600 = Color(0xFFAD5B54);
-  static const rose700 = Color(0xFF8F4741);
-  static const rose800 = Color(0xFF773D38);
-  static const rose900 = Color(0xFF542B28);
+  static const slate50 = Color(0xFFF7FAFC);
+  static const slate100 = Color(0xFFEDF3F7);
+  static const slate200 = Color(0xFFDCE6EE);
+  static const slate300 = Color(0xFFB9CBD9);
+  static const slate400 = Color(0xFF7C96AB);
+  static const slate500 = Color(0xFF627C91);
+  static const slate600 = Color(0xFF4C6478);
+  static const slate700 = Color(0xFF40586C);
+  static const slate800 = Color(0xFF33475A);
+  static const slate900 = Color(0xFF24343F);
 
-  static const champagne100 = Color(0xFFF7F1E8);
-  static const champagne200 = Color(0xFFEFE2D0);
-  static const champagne300 = Color(0xFFE2CBA8);
+  static const gold100 = Color(0xFFF8F3E8);
+  static const gold200 = Color(0xFFE8DCC2);
+  static const gold300 = Color(0xFFD8C8A0);
 
   static const primaryGradient = LinearGradient(
-    colors: [Color(0xFFCC8882), Color(0xFFB56962), Color(0xFF9E524B)],
+    colors: [Color(0xFF6E889C), Color(0xFF5B7489), Color(0xFF455C70)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );
 
   static const selectedCircleGradient = LinearGradient(
-    colors: [Color(0xFFCC8882), Color(0xFFB0625B)],
+    colors: [Color(0xFF6E889C), Color(0xFF4C6478)],
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
   );

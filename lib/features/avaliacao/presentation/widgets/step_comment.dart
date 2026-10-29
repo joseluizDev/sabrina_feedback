@@ -44,19 +44,26 @@ class StepComment extends StatelessWidget {
                       fontSize: 11,
                       letterSpacing: 2.0,
                       fontWeight: FontWeight.w600,
-                      color: AppColors.rose400,
+                      color: AppColors.slate600,
                     ),
                   ),
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 2,
+                    ),
                     decoration: BoxDecoration(
-                      color: AppColors.rose50,
+                      color: AppColors.slate50,
                       borderRadius: BorderRadius.circular(999),
-                      border: Border.all(color: AppColors.rose200),
+                      border: Border.all(color: AppColors.slate200),
                     ),
                     child: const Text(
                       'Opcional',
-                      style: TextStyle(fontSize: 11, color: AppColors.rose600, fontWeight: FontWeight.w500),
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: AppColors.slate600,
+                        fontWeight: FontWeight.w500,
+                      ),
                     ),
                   ),
                 ],
@@ -68,13 +75,17 @@ class StepComment extends StatelessWidget {
                   fontFamily: 'serif',
                   fontSize: 22,
                   fontWeight: FontWeight.w600,
-                  color: AppColors.rose900,
+                  color: AppColors.slate900,
                 ),
               ),
               const SizedBox(height: 4),
               const Text(
                 'Selecione um dos aspectos abaixo ou escreva uma mensagem carinhosa, sugestão ou elogio.',
-                style: TextStyle(fontSize: 13, fontWeight: FontWeight.w300, color: AppColors.rose700),
+                style: TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w300,
+                  color: AppColors.slate700,
+                ),
               ),
               const SizedBox(height: 8),
               Wrap(
@@ -87,20 +98,31 @@ class StepComment extends StatelessWidget {
                     onTap: () => onToggleTag(tag),
                     child: AnimatedContainer(
                       duration: const Duration(milliseconds: 200),
-                      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 12,
+                        vertical: 6,
+                      ),
                       decoration: BoxDecoration(
-                        color: isSelected ? AppColors.rose200 : AppColors.rose50.withValues(alpha: 0.8),
+                        color: isSelected
+                            ? AppColors.slate200
+                            : AppColors.slate50.withValues(alpha: 0.8),
                         borderRadius: BorderRadius.circular(999),
                         border: Border.all(
-                          color: isSelected ? AppColors.rose500 : AppColors.rose200,
+                          color: isSelected
+                              ? AppColors.slate500
+                              : AppColors.slate200,
                         ),
                       ),
                       child: Text(
                         '✦ $tag',
                         style: TextStyle(
                           fontSize: 12,
-                          fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-                          color: isSelected ? AppColors.rose900 : AppColors.rose700,
+                          fontWeight: isSelected
+                              ? FontWeight.w600
+                              : FontWeight.w400,
+                          color: isSelected
+                              ? AppColors.slate900
+                              : AppColors.slate700,
                         ),
                       ),
                     ),
@@ -111,27 +133,33 @@ class StepComment extends StatelessWidget {
               TextField(
                 controller: controller,
                 onChanged: onCommentChanged,
-                maxLines: 3,
+                maxLines: 5,
                 maxLength: 500,
-                style: const TextStyle(fontSize: 14, color: AppColors.rose900),
+                style: const TextStyle(fontSize: 14, color: AppColors.slate900),
                 decoration: InputDecoration(
                   counterText: '',
                   hintText: 'Deixe aqui seu comentário, elogio ou sugestão (opcional)...',
-                  hintStyle: TextStyle(fontSize: 13, color: AppColors.rose400),
+                  hintStyle: TextStyle(fontSize: 13, color: AppColors.slate500),
                   filled: true,
-                  fillColor: AppColors.rose50.withValues(alpha: 0.6),
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+                  fillColor: AppColors.slate50.withValues(alpha: 0.6),
+                  contentPadding: const EdgeInsets.symmetric(
+                    horizontal: 14,
+                    vertical: 10,
+                  ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
-                    borderSide: const BorderSide(color: AppColors.rose200),
+                    borderSide: const BorderSide(color: AppColors.slate200),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
-                    borderSide: const BorderSide(color: AppColors.rose200),
+                    borderSide: const BorderSide(color: AppColors.slate200),
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
-                    borderSide: const BorderSide(color: AppColors.rose400, width: 1.5),
+                    borderSide: const BorderSide(
+                      color: AppColors.slate400,
+                      width: 1.5,
+                    ),
                   ),
                 ),
               ),

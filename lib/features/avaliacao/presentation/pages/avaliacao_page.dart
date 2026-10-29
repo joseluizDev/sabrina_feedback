@@ -88,10 +88,10 @@ class _AvaliacaoPageState extends State<AvaliacaoPage> {
                           decoration: BoxDecoration(
                             color: Colors.white.withValues(alpha: 0.90),
                             borderRadius: BorderRadius.circular(32),
-                            border: Border.all(color: AppColors.rose200),
+                            border: Border.all(color: AppColors.slate200),
                             boxShadow: [
                               BoxShadow(
-                                color: AppColors.rose700.withValues(alpha: 0.12),
+                                color: AppColors.slate700.withValues(alpha: 0.12),
                                 blurRadius: 40,
                                 offset: const Offset(0, 18),
                               ),
@@ -107,9 +107,9 @@ class _AvaliacaoPageState extends State<AvaliacaoPage> {
                                 decoration: const BoxDecoration(
                                   gradient: LinearGradient(
                                     colors: [
-                                      AppColors.champagne200,
-                                      AppColors.rose400,
-                                      AppColors.champagne200,
+                                      AppColors.gold200,
+                                      AppColors.gold300,
+                                      AppColors.gold200,
                                     ],
                                   ),
                                 ),
@@ -137,7 +137,7 @@ class _AvaliacaoPageState extends State<AvaliacaoPage> {
                           style: TextStyle(
                             fontSize: 11,
                             letterSpacing: 2.2,
-                            color: AppColors.rose400,
+                            color: AppColors.slate600,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
